@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My World</string>
+    <string name="app_name">Myworld</string>
+    <string name="large_text">"Avoiding elevation interference.\n\n" </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

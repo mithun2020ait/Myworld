@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/cpWhite"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_profile_cv"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="57.5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/usertham"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cpBackground"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/mypage" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Sree Kantoo"
+        android:textColor="@color/cpDark"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_cv" />
+
+
+    <TextView
+        android:id="@+id/fcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="92dp"
+        android:text="230"
+        android:textColor="@color/cpDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Following"
+        android:textColor="@color/cpDark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/fcount"
+        app:layout_constraintTop_toTopOf="@+id/fcount" />
+
+    <View
+        android:id="@+id/viewdot"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/cpDark"
+        android:elevation="0dp"
+        app:layout_constraintStart_toEndOf="@+id/fname"
+        app:layout_constraintTop_toTopOf="@+id/fname"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/fingcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="230"
+        android:textColor="@color/cpDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/viewdot"
+        app:layout_constraintTop_toTopOf="@+id/fname" />
+
+    <TextView
+        android:id="@+id/fingname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        android:textColor="@color/cpDark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0531"
+        app:layout_constraintStart_toEndOf="@+id/fingcount"
+        app:layout_constraintTop_toTopOf="@+id/fingcount" />
+    <TextView
+        android:id="@+id/userintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="XML acts as a major role in creating a circular Image View creating a circular Image View"
+        android:textColor="@color/cpDark"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/bconview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="392dp"
+        android:background="@drawable/roundradiusforview"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userintro" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/roundradiusforbutton"
+        android:elevation="0dp"
+        android:letterSpacing="0.05"
+        android:stateListAnimator="@null"
+        android:text="Edit Profile"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/cpDark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/bconview"
+        app:layout_constraintTop_toTopOf="@id/bconview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

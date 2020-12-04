@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cpWhite"
+
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTodos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/etTodos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="rasdabds jsnsc"/>
+    <Button
+        android:id="@+id/btTodos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="csdac cjsncsc"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
